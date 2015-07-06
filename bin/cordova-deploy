@@ -81,7 +81,7 @@ if(!somethingToBuild) {
 	return;
 }
 
-apkPath = program.apk ? program.apk : path.join(process.cwd(), 'platforms', 'android', 'ant-build', appName + '-debug.apk');
+apkPath = program.apk ? program.apk : path.join(process.cwd(), 'platforms', 'android', 'build', 'outputs', 'apk', 'android-debug.apk');
 
 if(hockeyConfig) {
 	// console.log('We have a hockey config cool!');
